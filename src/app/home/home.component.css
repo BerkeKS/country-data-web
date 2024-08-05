@@ -1,0 +1,40 @@
+/*
+body {
+    background-color: #01171b;
+}
+*/
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+svg path {
+    fill: black;
+    stroke: #eee;
+    stroke-width: .25;
+}
+
+svg path.African:hover {
+    fill: rgb(105, 252, 161);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+svg path.European:hover {
+    fill: #7eb2ed;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+svg path.Asian:hover {
+    fill: #ede27e;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+svg path.American:hover {
+    fill: #fe5151;
+    transition: 0.6s;
+    cursor: pointer;
+}
