@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+#continent {
+    margin-top: 5%;
+    margin-inline: 15%;
+    font-family: "Comfortaa", sans-serif;
+}
+
+#brand {
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 1%;
+    margin-left: 3%;
+    color: white;
+}
+
+#continent:hover, #continent:visited, #continent:link, #continent:active, #brand:hover, #brand:visited, #brand:link, #brand:active
+{
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    margin-left: 25%;
+    margin-right: 5%;
+}
+
+#footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+#footer-line {
+    display: flex;
+    margin-left: 5%;
+}
+
+#signature {
+    margin-right: 2%;
+    color: white;
+}
+
+#github:hover {
+    transform: scale(1.4);
+}
