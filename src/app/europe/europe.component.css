@@ -1,3 +1,20 @@
+#country-container {
+    background-color: white;
+    width: 18%;
+    margin-block: 2%;
+}
+
+#country-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#country-container p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: large;
+    height: 10%;
+}
+
 svg {
     height: 100%;
     width: auto;
