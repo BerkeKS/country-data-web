@@ -1,6 +1,15 @@
+.main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.main .country-list {
+    column-count: 2;
+}
+
 #country-container {
     background-color: white;
-    width: 18%;
+    width: 100%;
     margin-block: 2%;
 }
 
@@ -13,7 +22,6 @@
 #country-container p {
     font-family: "Comfortaa", sans-serif;
     font-size: large;
-    height: 10%;
 }
 
 svg {
