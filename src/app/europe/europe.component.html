@@ -1,12 +1,10 @@
 <div class="main">
     <ul class="country-list">
         @for (country of countries1; track country) {
-            <div id="country-container" onmouseover="countryHover(country.name.common)">
-                <!--
-                        <img src="{{country.flags.png}}">
-                        -->
-                <p>{{country.name.common}}</p>
-            </div>
+        <div id="country-container" onmouseover="countryHover(country.name.common)">
+            <img width="45" src="{{country.flags.png}}">
+            <p>{{country.name.common}}</p>
+        </div>
         }
     </ul>
     <?xml version="1.0"?><svg baseprofile="tiny" fill="#ececec" height="684" stroke="black" stroke-linecap="round"
@@ -287,13 +285,11 @@
     </svg>
     <ul class="country-list">
         @for (country of countries2; track country) {
-            <div id="country-container">
-                <!--
-                            <img src="{{country.flags.png}}">
-                            -->
-                <p>{{country.name.common}}</p>
-            </div>
-            }
+        <div id="country-container" onmouseover="countryHover(country.name.common)">
+            <img width="50" src="{{country.flags.png}}">
+            <p>{{country.name.common}}</p>
+        </div>
+        }
     </ul>
 </div>
 <script>
