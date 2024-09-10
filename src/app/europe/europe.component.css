@@ -8,6 +8,8 @@
 }
 
 #country-container {
+    display: flex;
+    align-items: center;
     background-color: white;
     width: 100%;
     margin-block: 2%;
@@ -22,6 +24,7 @@
 #country-container p {
     font-family: "Comfortaa", sans-serif;
     font-size: large;
+    margin-left: 2%;
 }
 
 svg {
