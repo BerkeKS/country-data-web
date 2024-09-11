@@ -33,7 +33,7 @@ export const routes: Routes = [
         title: "Europe - Country Data"
     },
     {
-        path: ":country",
+        path: "country/:country",
         component: CountryComponent,
         title: "Country - Country Data"
     }
