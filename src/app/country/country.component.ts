@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-country',
@@ -9,12 +10,22 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './country.component.css'
 })
 export class CountryComponent implements OnInit {
-  country: String = ""
+  http = inject(HttpClient)
+  countryParam: String = ""
+  country: any = {}
   private route = inject(ActivatedRoute)
+  private countryApiUrl = "https://restcountries.com/v3.1/name/"
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      this.country = params["country"]
+      this.countryParam = params["country"]
+    })
+    this.getCountry()
+  }
+
+  getCountry() {
+    this.http.get(this.countryApiUrl + this.countryParam).subscribe((country: any) => {
+      this.country = country[0]
     })
   }
 }
