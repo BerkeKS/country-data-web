@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AfricaComponent } from './africa/africa.component';
 import { AmericasComponent } from './americas/americas.component';
 import { AsiaComponent } from './asia/asia.component';
+import { CountryComponent } from './country/country.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,10 @@ export const routes: Routes = [
         path: "europe",
         component: EuropeComponent,
         title: "Europe - Country Data"
+    },
+    {
+        path: ":country",
+        component: CountryComponent,
+        title: "Country - Country Data"
     }
 ];
