@@ -18,7 +18,7 @@ export class AfricaComponent implements OnInit {
   }
 
   getCountries() {
-    this.http.get("https://restcountries.com/v3.1/region/asia")
+    this.http.get("https://restcountries.com/v3.1/region/africa")
     .subscribe((country: any) => {
       this.countries1 = country
       this.countries1.sort((a : any, b: any) => a.name.common.localeCompare(b.name.common));
