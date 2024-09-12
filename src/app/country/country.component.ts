@@ -14,7 +14,7 @@ export class CountryComponent implements OnInit {
   countryParam: String = ""
   country: any = {}
   private route = inject(ActivatedRoute)
-  private countryApiUrl = "https://restcountries.com/v3.1/name/"
+  private countryApiUrl = "https://restcountries.com/v3.1/alpha/"
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
